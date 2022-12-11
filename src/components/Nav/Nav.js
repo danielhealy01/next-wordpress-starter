@@ -11,6 +11,8 @@ import Section from 'components/Section';
 
 import styles from './Nav.module.scss';
 import NavListItem from 'components/NavListItem';
+import Image from 'next/future/image';
+import RocketMan from '../Nav/SpaceMan.png';
 
 const SEARCH_VISIBLE = 'visible';
 const SEARCH_HIDDEN = 'hidden';
@@ -177,6 +179,7 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <Section className={styles.navSection}>
+        <Image className={styles.image} alt="RocketMan" src={RocketMan} width={173} height={169} />
         <p className={styles.navName}>
           <Link href="/">
             <a>{title}</a>
