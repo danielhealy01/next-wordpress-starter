@@ -21,7 +21,7 @@ export default function Home({ posts, pagination }) {
       <Header>
         <h1
           dangerouslySetInnerHTML={{
-            __html: title,
+            __html: `React / Next.js headless Wordpress Interface Powered by GraphQL`,
           }}
         />
 
